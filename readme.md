@@ -11,7 +11,7 @@ Start by creating the following three files, creating a project structure that l
 ```sh
 ├── css
 │   └── main.css
-├── jquery-madlibs.html
+├── index.html
 └── js
     └── main.js
  ```
