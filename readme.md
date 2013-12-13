@@ -61,7 +61,7 @@ $(function() {
 
 Open the "index.html" file in your web browser. You should see this:
 
-![boilerplate](https://github.com/mjhea0/jquery-madlibs/blob/master/boilerplate.png)
+![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
 
 This is a good base for us to start with. 
 
@@ -150,7 +150,7 @@ Here we added a form for inputting the words, as well as the story the inputed w
 
 `display:none` hides the story from view. You'll see in a second why we do this.
 
-![form](https://github.com/mjhea0/jquery-madlibs/blob/master/form.png)
+![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
 
 ## Add jQuery
 
@@ -185,7 +185,7 @@ $(function() {
 
 Let's test out the functionality. Enter values into the form and press submit. You should see the following if all went well.
 
-![story](https://github.com/mjhea0/jquery-madlibs/blob/master/story.png)
+![story](https://raw.github.com/mjhea0/jquery-madlibs/master/story.png)
 
 ## Play again
 
