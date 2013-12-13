@@ -1,6 +1,6 @@
 # Mad Libs featuring Bootstrap and jQuery
 
-Did you ever play Mad Libs as a kid? If not, you simply fill out a random list of words based on a part of speach - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous causing people to laugh over and over again.
+Did you ever play Mad Libs as a kid? If not, the games is simple: You fill out a random list of words based on a part of speach - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing people to laugh over and over again.
 
 Let's have some fun.
 
@@ -15,7 +15,6 @@ Start by creating the following three files, creating a project structure that l
 └── js
     └── main.js
  ```
-
 
 ### index.html
 
@@ -62,7 +61,11 @@ $(function() {
 
 Open the "index.html" file in your web browser. You should see this:
 
+<<<<<<< HEAD
 ![boilerplate](https://github.com/mjhea0/jquery-madlibs/blob/master/boilerplate.png)
+=======
+![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
+>>>>>>> 14bab303a6af2ee1e2ba19e3a449183666ebf9af
 
 This is a good base for us to start with. 
 
@@ -151,11 +154,15 @@ Here we added a form for inputting the words, as well as the story the inputed w
 
 `display:none` hides the story from view. You'll see in a second why we do this.
 
+<<<<<<< HEAD
 ![form](https://github.com/mjhea0/jquery-madlibs/blob/master/form.png)
+=======
+![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
+>>>>>>> 14bab303a6af2ee1e2ba19e3a449183666ebf9af
 
 ## Add jQuery
 
-Grab the values from the form inputs upon submission of the form, then insert them between the `<span>` elements, then unhide the story. To do that, let's update "main.js".
+Grab the values from the form inputs upon submission of the form, insert them between the `<span>` elements, then unhide the story. To do that, let's update "main.js".
 
 ```javascript
 $(function() {
@@ -186,7 +193,11 @@ $(function() {
 
 Let's test out the functionality. Enter values into the form and press submit. You should see the following if all went well.
 
+<<<<<<< HEAD
 ![story](https://github.com/mjhea0/jquery-madlibs/blob/master/story.png)
+=======
+![story](https://raw.github.com/mjhea0/jquery-madlibs/master/story.png)
+>>>>>>> 14bab303a6af2ee1e2ba19e3a449183666ebf9af
 
 ## Play again
 
