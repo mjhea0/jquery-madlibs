@@ -199,7 +199,7 @@ $("#play-btn").click(function(e) {
 });
 ```
 
-Test this out again. 
+Test this out again. If all works well, run along and play with your bestest friends.
 
 
 
