@@ -12,3 +12,14 @@ $(function() {
     $("#questions").hide();
   });
 });
+
+
+// What's going on here?
+
+// $("form").submit() initiates the process. In other words, the remaining jQuery doesn't run until you submit the form.
+// e.preventDefault() disables the browser's default behavior.
+// .val() fetches the value from the form inputs
+// .empty() removes any text from that specific class in the story.
+// .append() then adds the new value to the stort.
+// .show() unhides the story
+// .hide() hides the questions
