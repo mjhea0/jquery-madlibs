@@ -177,7 +177,7 @@ $(function() {
 
 1. `.val()` fetches the value from the form inputs
 1. `.empty()` removes any text from that specific class in the story.
-3. `.append()' then adds the new value to the stort.
+3. `.append()` then adds the new value to the stort.
 4. `.show()` unhides the story
 5. `.hide()` hides the questions
 
