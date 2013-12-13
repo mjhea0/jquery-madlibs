@@ -22,6 +22,7 @@ Start by creating the following three files, creating a project structure that l
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- stylesheets -->
     <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>My AWESOME Boilerplate</title>
@@ -34,6 +35,7 @@ Start by creating the following three files, creating a project structure that l
         <button type="button" class="btn btn-primary btn-lg">My BIG Button</button>
       </div>
     </div>
+    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -63,7 +65,7 @@ Open the "index.html" file in your web browser. You should see this:
 
 ![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
 
-This is a good base for us to start with. 
+This is a good base for us to start with. Also, to ensure that JavaScript is working, open your console. You should see the text "whee!".
 
 ## Mad libs format
 
@@ -75,6 +77,7 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- stylesheets -->
     <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Morning Mad Libs</title>
@@ -124,6 +127,7 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
       </div>
 
     </div>
+    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -131,7 +135,7 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
 </html>
 ```
 
-Here we added a form for inputting the words, as well as the story the inputed words will be inserted into.
+Here we added a form for inputting the words, as well as the story the inputed words will be inserted into. I also included some Bootstrap classes for styling. 
 
 ### main.css
 
@@ -175,11 +179,13 @@ $(function() {
 
 **What's going on here?**
 
-1. `.val()` fetches the value from the form inputs
-1. `.empty()` removes any text from that specific class in the story.
-3. `.append()` then adds the new value to the stort.
-4. `.show()` unhides the story
-5. `.hide()` hides the questions
+1. `$("form").submit()` initiates the process. In other words, the remaining jQuery doesn't run until you submit the form.
+2. `e.preventDefault()` disables the browser's default behavior. 
+3. `.val()` fetches the value from the form inputs
+4. `.empty()` removes any text from that specific class in the story.
+5. `.append()` then adds the new value to the stort.
+6. `.show()` unhides the story
+7. `.hide()` hides the questions
 
 ## Test
 
@@ -189,7 +195,7 @@ Let's test out the functionality. Enter values into the form and press submit. Y
 
 ## Play again
 
-Next, add the ability to play the game again by adding the following function to "main.js":
+Next, add the ability to play the game again by adding the following code to "main.js":
 
 ```javascript
 $("#play-btn").click(function(e) {
@@ -198,8 +204,11 @@ $("#play-btn").click(function(e) {
   $("#story").hide();
 });
 ```
+Can you tell what's happening here? Look at previous jQuery code that we added before. 
 
-Test this out again. If all works well, run along and play with your bestest of friends.
+**All done?**
+
+Test the program out again. If all works well, run along and play with your bestest of friends.
 
 ## Challenges
 
@@ -207,10 +216,7 @@ Too easy? Need some challenges?
 
 1. As with all projects, there are many ways of solving this. Implement a new means.
 2. Add unit and functional tests.
-3. Allow users to add their own stories. Think about what type of medium you could use to store the data.
-4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Doublt the amount of laughts.
+3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps?
+4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughts.
 
 Have fun. Cheers!
-
-
-
