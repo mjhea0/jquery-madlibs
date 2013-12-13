@@ -199,7 +199,18 @@ $("#play-btn").click(function(e) {
 });
 ```
 
-Test this out again. If all works well, run along and play with your bestest friends.
+Test this out again. If all works well, run along and play with your bestest of friends.
+
+## Challenges
+
+Too easy? Need some challenges?
+
+1. As with all projects, there are many ways of solving this. Implement a new means.
+2. Add unit and functional tests.
+3. Allow users to add their own stories. Think about what type of medium you could use to store the data.
+4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Doublt the amount of laughts.
+
+Have fun. Cheers!
 
 
 
