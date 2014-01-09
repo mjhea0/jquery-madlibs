@@ -6,7 +6,7 @@ Let's have some fun.
 
 ## Boilerplate
 
-Start by creating the following three files, creating a project structure that looks like this:
+Start by creating the following files and directories, to define a project structure that looks like this:
 
 ```sh
 ├── css
