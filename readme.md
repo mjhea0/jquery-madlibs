@@ -166,6 +166,7 @@ Grab the values from the form inputs upon submission of the form, insert them be
 $(function() {
   $("form").submit(function(e) {
     e.preventDefault()
+    // grabs the value from the input, then appends that value to the story
     $(".person").empty().append($("input.person").val());
     $(".adjective").empty().append($("input.adjective").val());
     $(".noun").empty().append($("input.noun").val());
