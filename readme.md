@@ -1,6 +1,6 @@
 # Mad Libs featuring Bootstrap and jQuery
 
-Did you ever play Mad Libs as a kid? If not, the games is simple: You fill out a random list of words based on a part of speach - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing people to laugh over and over again.
+Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speach - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing people to laugh over and over again.
 
 Let's have some fun.
 
