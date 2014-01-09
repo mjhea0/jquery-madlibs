@@ -184,11 +184,11 @@ $(function() {
 
 1. `$("form").submit()` initiates the process. In other words, the remaining jQuery doesn't run until you submit the form.
 2. `e.preventDefault()` disables the browser's default behavior. 
-3. `.val()` fetches the value from the form inputs
+3. `.val()` fetches the value from the form inputs.
 4. `.empty()` removes any text from that specific class in the story.
-5. `.append()` then adds the new value to the stort.
-6. `.show()` unhides the story
-7. `.hide()` hides the questions
+5. `.append()` then adds the new value to the story.
+6. `.show()` unhides the story.
+7. `.hide()` hides the questions.
 
 ## Test
 
