@@ -183,7 +183,7 @@ $(function() {
 **What's going on here?**
 
 1. `$("form").submit()` initiates the process. In other words, the remaining jQuery doesn't run until you submit the form.
-2. `e.preventDefault()` disables the browser's default behavior. 
+2. `e.preventDefault()` disables the browser's default behavior. Try leaving this out. What happens? 
 3. `.val()` fetches the value from the form inputs.
 4. `.empty()` removes any text from that specific class in the story.
 5. `.append()` then adds the new value to the story.
