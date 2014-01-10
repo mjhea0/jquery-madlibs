@@ -222,4 +222,8 @@ Too easy? Need some challenges?
 3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? Mongo?
 4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
 
+## Too hard?
+
+Start with the basics. Create a simple form from the two files within the "easy" directory. Most of the code is already filled out. Look at my example if you need help. Make it look pretty by adding a CSS file.
+
 Have fun. Cheers!
