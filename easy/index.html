@@ -1,5 +1,31 @@
-<form id="some-form">
-  <label for="some-input">Your input:</label>
-  <input id="some-input" type="text">
-  <button type="submit" class="btn">Submit!</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <title>My AWESOME Form</title>
+    <style>
+      .container {
+        padding-top: 50px;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, World!</h1>
+      <p class="lead">My AWESOME Form</p>
+      <div class="form-group">
+        <form id="my-form" role="form">
+          <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
+          <br>
+          <button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
+        </form>
+      </div>
+      <br>
+      <div class="my-class"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

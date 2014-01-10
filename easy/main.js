@@ -1,5 +1,6 @@
-$("form#some-form").submit(function(event) {
-  event.preventDefault();
-  var someInput = $("input#some-input").val()
-  $(".some-class").text("New text");
+$(function() {
+  $("form").submit(function(e) {
+    e.preventDefault()
+    $(".my-class").empty().append($("input").val());
+  });
 });
