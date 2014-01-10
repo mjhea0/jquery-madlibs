@@ -65,7 +65,7 @@ Open the "index.html" file in your web browser. You should see this:
 
 ![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
 
-Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS provides makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
+Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
 This is a good base for us to start with. Also, to ensure that JavaScript is working, open your console. You should see the text "whee!".
 
