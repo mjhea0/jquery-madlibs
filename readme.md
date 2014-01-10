@@ -137,7 +137,7 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
 </html>
 ```
 
-Here we added a form (with labels and inputs) for inputting the words, as well as the story that the inputed words will be inserted into. The actual words will be inserted between the span tags. Notice how the classes for the each span matches the input id in the form. This is not required, but it just makes it consistent.  I also included some [Bootstrap](http://getbootstrap.com/) classes for styling. 
+Here we added a form (with labels and inputs) for inputting the words, as well as the story that the inputed words will be inserted into. The actual words will be inserted between the span tags. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes it consistent.  I also included some [Bootstrap](http://getbootstrap.com/) classes for styling. 
 
 ### main.css
 
