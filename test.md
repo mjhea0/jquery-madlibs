@@ -2,7 +2,7 @@ So, I'm Michael Herman. I'm a Python and Frontend mentor here at Thinkful. I've 
 
 I'm a new mentor at thinkful. In my opinion, when you are learning, finding a mentor is one of the most important tasks. Just having someone there to talk to, who struggled in many of the same ways makes a huge difference. Without the mentor I had, I wouldn't be here today. This is exactly what makes Thinkful special, and why I am a part of it.
 
-So that's who I am. I'd love to know who you are. So, let's just go around quickly. Just say your name, how much experience you have with programming, and where you're from. Oh and also indicate whether you know what madlibs is as that's what we will be creating today. Just a simple yes or no will suffice. 
+So that's who I am. I'd love to know who you are. So, let's just go around quickly. Just say your name, how much experience you have with programming, and where you're from. Oh and also indicate whether you know what madlibs is as that's what we will be creating today. Just a simple yes or no will suffice. You can either speak if you have a microphone or type it in the chat window.
 
 ...
 
