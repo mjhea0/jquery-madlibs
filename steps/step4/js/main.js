@@ -9,7 +9,7 @@ $(function() {
     // display value within the browser's JS console
     console.log(input)
     // add the value to the DOM
-    $(".results").append(input);
+    $(".results").empty().append(input);
   });
 
 });

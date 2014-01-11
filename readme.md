@@ -248,12 +248,14 @@ $(".results").append(input);
 After:
 
 ```javascript
-$(".results").empty.append(input);
+$(".results").empty().append(input);
 ```
 
 I'm sure you can guess what this method does. If not, test it out. Test it out, regardless. :)
 
-## Step 5:
+***That's it for the basics. Next, let's move on to adding the Madlibs functionality.**
+
+## Step 5: Update the Form
 
 ## Mad libs format
 
