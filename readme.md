@@ -306,6 +306,10 @@ Here we added a new form with both labels and inputs. I also updated the page ti
 
 Go ahead and update the `max-width` of the `container` in the CSS file to 500px: `max-width: 500px;`.
 
+Check out the file in the browser:
+
+![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
+
 #### index.html
 
 Next, remove this code-
@@ -436,18 +440,48 @@ This time I did not assign the values to variables; instead I used the inputted 
 
 Test this out. Did it work? Were the values added to the story? If all went well, they should have been.
 
+#### main.js
 
+Now, before we move on, let's add some more functionality:
 
+1. First, we do not want the story to be initially displayed - `$("#story").hide();`
+2. Next, we want to show the story after the button click - $("#story").show(); - and empty the form's input boxes - `$(':input').val('');`.
+3. Finally, let's go ahead and hit all the questions after the form is submited so the user can just focus on the story - `$("#questions").hide();`.
 
+Update main.js with those additional methods:
+
+```javascript
+$(function() {
+
+  // hide the story from view
+  $("#story").hide();
+
+  // ---- event handler ---- //
+  $("#btn-click").click(function(e) {
+
+    // grab the values from the input boxes, then append them to the DOM
+    $(".person").empty().append($("input.person").val());
+    $(".adjective").empty().append($("input.adjective").val());
+    $(".noun").empty().append($("input.noun").val());
+    $(".insect").empty().append($("input.insect").val());
+    $(".noun2").empty().append($("input.plural-noun").val());
+    $(".verb").empty().append($("input.verb").val());
+
+    // show the story
     $("#story").show();
+
+    // empty the form's values
     $(':input').val('');
+
+    // hide the questions
     $("#questions").hide();
 
-**What's going on here?**
+  });
+
+});
+```
 
 
-6. `.show()` unhides the story.
-7. `.hide()` hides the questions.
 
 ### main.css
 
