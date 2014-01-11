@@ -78,7 +78,7 @@ Add the following code to your "index.html" file right after `<h1>Hello, World!<
 <form id="my-form" role="form">
   <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
   <br>
-  <button type="submit" class="btn btn-primary btn-lg">My BIG Button</button>
+  <button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
 </form>
 <!-- end form -->
 ```
