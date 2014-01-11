@@ -183,6 +183,10 @@ Open "index.html" in your browser. Make sure you have your JavaScript console op
 
 ![console](https://raw.github.com/mjhea0/jquery-madlibs/master/console.png)
 
+## Step 4: Append the text to the DOM
+
+Next, instead of using a `console.log` to display the inputted word to the user, let's add it to the DOM? Wait. What's the DOM?
+
 
 ## Mad libs format
 
@@ -338,8 +342,8 @@ Too easy? Need some challenges?
 4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
 5. ENTER button - add another event or submit button and move into the form and prevent default
 
-## Too hard?
+## Too hard? Start with the basics. 
 
-Start with the basics. Create a simple form from the two files within the "easy" directory. Most of the code is already filled out. Look at my example if you need help. Make it look pretty by adding a CSS file.
+Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Madlibs game on your own, without looking at the remaning steps. 
 
 Have fun. Cheers!
