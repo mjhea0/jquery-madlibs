@@ -2,14 +2,13 @@
 <html>
   <head>
     <!-- stylesheets -->
-    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Morning Mad Libs</title>
   </head>
   <body>
     <div class="container">
 
-      <!-- start form -->
       <div id="questions">
         <h1>Please fill out the following!</h1>
         <hr>
@@ -39,14 +38,12 @@
             <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ending in "s" ..">
           </div>
           <div>
+            <button type="submit" class="btn btn-primary btn-lg">Generate!</button>
           </div>
         </form>
-        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
         <hr>
       </div>
-      <!-- end form -->
 
-      <!-- start story -->
       <div id="story">
         <h1>Mad with the Libs</h1>
         <hr>
@@ -54,13 +51,18 @@
         <div>
           <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Play Again?</button>
         </div>
-      </div>      
-      <!-- end story -->
+      </div>
 
     </div>
+
     <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+
+
