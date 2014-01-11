@@ -67,7 +67,7 @@ Oh - and JavaScript is used to make webpages interactive. JavaScript works in co
 
 ## Step 2: Add a Form
 
-For Madlibs we need to display a form for the user to enter words. Let's start with a simplified version. 
+For Mad Libs we need to display a form for the user to enter words. Let's start with a simplified version. 
 
 #### index.html
 
@@ -531,6 +531,6 @@ What else?
 
 ## Too hard? Start with the basics. 
 
-Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Madlibs game on your own, without looking at the remaining steps. 
+Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Mad Libs game on your own, without looking at the remaining steps. 
 
 Have fun. Cheers!
