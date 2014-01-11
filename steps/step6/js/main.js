@@ -1,15 +1,15 @@
 $(function() {
-  
   console.log("whee!")
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
-  	// grab the value from the input box after the button click
-    var input = $("input").val()
-    // display value within the browser's JS console
-    console.log(input)
-    // add the value to the DOM
-    $(".results").empty().append(input);
+    // grab the values from the input boxes, then append them to the DOM
+    $(".person").empty().append($("input.person").val());
+    $(".adjective").empty().append($("input.adjective").val());
+    $(".noun").empty().append($("input.noun").val());
+    $(".insect").empty().append($("input.insect").val());
+    $(".noun2").empty().append($("input.plural-noun").val());
+    $(".verb").empty().append($("input.verb").val());
   });
 
 });

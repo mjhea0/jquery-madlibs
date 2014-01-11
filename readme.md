@@ -403,39 +403,35 @@ Check it out in your browser.
 
 ## Step 6: Update the jQuery
 
+Now we need to expand our JavaScript file so that upon the event (button click), we grab all the values, then insert them between the empty `<span>` tags.
 
-
-
-    
-      
-
-
-
-
-
-
-
-## Add jQuery
-
-Grab the values from the form inputs upon submission of the form, insert them between the empty `<span>` tags, then unhide the story. To do that, let's update "main.js".
+#### main.js
 
 ```javascript
 $(function() {
-  $("form").submit(function(e) {
-    e.preventDefault()
-    // grabs the value from the input, then appends that value to the story
+  console.log("whee!")
+
+  // ---- event handler ---- //
+  $("#btn-click").click(function(e) {
+    // grab the values from the input boxes, then append them to the DOM
     $(".person").empty().append($("input.person").val());
     $(".adjective").empty().append($("input.adjective").val());
     $(".noun").empty().append($("input.noun").val());
     $(".insect").empty().append($("input.insect").val());
     $(".noun2").empty().append($("input.plural-noun").val());
     $(".verb").empty().append($("input.verb").val());
+  });
+
+});
+```
+
+
+
+
+
     $("#story").show();
     $(':input').val('');
     $("#questions").hide();
-  });
-});
-```
 
 **What's going on here?**
 
