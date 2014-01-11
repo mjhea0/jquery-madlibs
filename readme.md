@@ -181,7 +181,7 @@ After:
 
 Open "index.html" in your browser. Make sure you have your JavaScript console open. Enter a word in the input box and click the button. This should display the word in the console:
 
-![console](https://raw.github.com/mjhea0/jquery-madlibs/images/master/console.png)
+![console](https://raw.github.com/mjhea0/jquery-madlibs/master/images/console.png)
 
 ## Step 4: Append the text to the DOM
 
@@ -233,7 +233,7 @@ Add the following lines just below the form:
 
 Test this out in your browser. You should see this:
 
-![dom](https://raw.github.com/mjhea0/jquery-madlibs/images/master/dom.png)
+![dom](https://raw.github.com/mjhea0/jquery-madlibs/master/images/dom.png)
 
 #### main.js
 
@@ -308,7 +308,7 @@ Go ahead and update the `max-width` of the `container` in the CSS file to 500px:
 
 Check out the file in the browser:
 
-![form](https://raw.github.com/mjhea0/jquery-madlibs/images/master/form.png)
+![form](https://raw.github.com/mjhea0/jquery-madlibs/master/images/form.png)
 
 #### index.html
 
@@ -483,7 +483,7 @@ $(function() {
 
 Let's test out the functionality again. Enter values into the form and press Generate. You should see the following if all went well:
 
-![story](https://raw.github.com/mjhea0/jquery-madlibs/images/master/story.png)
+![story](https://raw.github.com/mjhea0/jquery-madlibs/master/images/story.png)
 
 > Please note: Instead of using jQuery, `$("#story").hide();` to hide the story, you could also use CSS - `#story {display: none;}`
 
