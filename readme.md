@@ -185,7 +185,56 @@ Open "index.html" in your browser. Make sure you have your JavaScript console op
 
 ## Step 4: Append the text to the DOM
 
-Next, instead of using a `console.log` to display the inputted word to the user, let's add it to the DOM? Wait. What's the DOM?
+Next, instead of using a `console.log` to display the inputted word to the user, let's add it to the Document Object Model (DOM)? Wait. What's the DOM? Quit simply, the DOM is a structural representation of the HTML document. Using JavaScript, you can add, remove, or modify the contents of the DOM, which changes how the page looks to the end user. 
+
+In this case, we want to add the text to the DOM. 
+
+#### main.js
+
+Open up your JavaScript file and add this line of code:
+
+```javascript
+$(".results").empty().append(input);
+```
+
+Updated file:
+
+```javascript
+$(function() {
+  
+  console.log("whee!")
+
+  // ---- event handler ---- //
+  $("#btn-click").click(function(e) {
+    // grab the value from the input box after the button click
+    var input = $("input").val()
+    // display value within the browser's JS console
+    console.log(input)
+    // add the value to the DOM
+    $(".results").append(input);
+  });
+
+});
+```
+#### index.html
+
+Add the following lines just below the form:
+
+```html
+<br>
+<br>
+<!-- inputted text after button click -->
+<p class="results"></p>
+```
+
+### What's going on?
+
+`$(".results").append(input);` adds the value of the input variable to the DOM between the `<p>` tags that have the class name "results" - which is exactly what we added to "index.html": `<p class="results"></p>`.
+
+Test this out in your browser. You should see this:
+
+![dom](https://raw.github.com/mjhea0/jquery-madlibs/master/dom.png)
+
 
 
 ## Mad libs format
