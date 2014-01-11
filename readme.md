@@ -503,7 +503,7 @@ Can you tell what's happening here? Look at previous jQuery code that we added b
 
 #### index.html
 
-Finally, add in a button with the an id of `play-btn` right after the story:
+Finally, add in a button with the an id of `play-btn` right before the closing div, `</div>` in the story section:
 
 ```html
 <div>
@@ -513,7 +513,7 @@ Finally, add in a button with the an id of `play-btn` right after the story:
 
 Test time.    
 
-**All done?**
+## All done?
 
 Test the program out again. If all works well, run along and play with your bestest of friends.
 
