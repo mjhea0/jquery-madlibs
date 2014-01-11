@@ -259,7 +259,7 @@ I'm sure you can guess what this method does. If not, test it out. Test it out, 
 
 First, expand the form:
 
-### index.html
+#### index.html
 
 ```html
 <!-- start form -->
@@ -300,18 +300,48 @@ First, expand the form:
 <!-- end form -->
 ```
 
+### What's going on?
+
+Here we added a new form with both labels and inputs. I also updated the page title, `<title>Morning Mad Libs</title>`, and removed `<h1>Hello, World!</h1>`.
+
+Go ahead and update the `max-width` of the `container` in the CSS file to 500px: `max-width: 500px;`.
+
+#### index.html
+
+Next, remove this code-
+
+```html
+<br>
+<br>
+<!-- inputted text after button click -->
+<p class="results"></p>
+```
+
+-and in it's place add the story:
+
+```html
+<!-- start story -->
+<div id="story">
+  <h1>Mad with the Libs</h1>
+  <hr>
+  <h3>I'm in love with <span class="person"></span>. He's so <span class="adjective"></span>! He has big flat <span class="noun"></span>, and when our <span class="insect"></span> meet, I get <span class="noun2"></span> in my stomach. I've fallen for him like a ton of <span class="verb"></span>, and he shuffles for me, too. But I think he's got another girlfriend. What should I do?</h3>
+</div>
+<!-- end story -->
+
 Updated file:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- stylesheets -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Morning Mad Libs</title>
   </head>
   <body>
     <div class="container">
+
       <!-- start form -->
       <div id="questions">
         <h1>Please fill out the following!</h1>
@@ -348,53 +378,42 @@ Updated file:
         <hr>
       </div>
       <!-- end form -->
-      <br>
-      <br>
-      <!-- inputted text after button click -->
-      <p class="results"></p>
+
+      <!-- start story -->
+      <div id="story">
+        <h1>Mad with the Libs</h1>
+        <hr>
+        <h3>I'm in love with <span class="person"></span>. He's so <span class="adjective"></span>! He has big flat <span class="noun"></span>, and when our <span class="insect"></span> meet, I get <span class="noun2"></span> in my stomach. I've fallen for him like a ton of <span class="verb"></span>, and he shuffles for me, too. But I think he's got another girlfriend. What should I do?</h3>
+      </div>
+      <!-- end story -->
+
     </div>
+    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
 ```
-
 ### What's going on?
 
-Here we added a form - with both labels and inputs - for inputting the words, 
+Notice the `<span>` tags. The actual words will be inserted between them once the user clicks the button. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes the naming consistent. 
 
-as well as the story that the inputed words will be inserted into. The actual words will be inserted between the span tags. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes it consistent.  I also included some  classes for styling. 
+Check it out in your browser.
 
-max-width: 500px;
-    <title>Morning Mad Libs</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hello, World!</h1>
+## Step 6: Update the jQuery
 
 
 
 
+    
+      
 
-### main.css
 
-```css
-/* main.css */
 
-.container {
-  padding-top: 50px;
-  max-width: 500px;
-}
 
-#story {
-  display: none;
-}
-```
 
-`display:none` hides the story from view. You'll see in a second why we do this.
 
-![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
 
 ## Add jQuery
 
@@ -427,6 +446,19 @@ $(function() {
 5. `.append()` then adds the new value to the story.
 6. `.show()` unhides the story.
 7. `.hide()` hides the questions.
+
+### main.css
+
+```css
+
+#story {
+  display: none;
+}
+```
+
+`display:none` hides the story from view. You'll see in a second why we do this.
+
+![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
 
 ## Test
 

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- stylesheets -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Morning Mad Libs</title>
   </head>
   <body>
     <div class="container">
+
       <!-- start form -->
       <div id="questions">
         <h1>Please fill out the following!</h1>
@@ -43,11 +45,17 @@
         <hr>
       </div>
       <!-- end form -->
-      <br>
-      <br>
-      <!-- inputted text after button click -->
-      <p class="results"></p>
+
+      <!-- start story -->
+      <div id="story">
+        <h1>Mad with the Libs</h1>
+        <hr>
+        <h3>I'm in love with <span class="person"></span>. He's so <span class="adjective"></span>! He has big flat <span class="noun"></span>, and when our <span class="insect"></span> meet, I get <span class="noun2"></span> in my stomach. I've fallen for him like a ton of <span class="verb"></span>, and he shuffles for me, too. But I think he's got another girlfriend. What should I do?</h3>
+      </div>
+      <!-- end story -->
+
     </div>
+    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
