@@ -4,9 +4,9 @@ Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out 
 
 Let's have some fun.
 
-## Boilerplate
+## Step 1: Project Boilerplate
 
-Start by creating the following files and directories, to define a project structure:
+Start by creating the following files and directories, to define a basic project structure:
 
 ```sh
 ├── css
@@ -15,6 +15,49 @@ Start by creating the following files and directories, to define a project struc
 └── js
     └── main.js
  ```
+
+### index.html
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <title>My AWESOME Boilerplate</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, World!</h1>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
+
+### main.css
+
+```css
+/* main.css */
+```
+
+### main.js
+
+```javascript
+$(function() {
+  console.log("whee!")
+});
+```
+
+![boilerplate-img]()
+
+Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
+
+This is a good base for us to start with. 
+
+Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's javascript console - e.g. Firebug or Developer Tools (Chrome / Safari).If JavaScript was not properly working then you'd see this error in the console: ""
+
 
 ### index.html
 
