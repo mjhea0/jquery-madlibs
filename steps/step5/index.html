@@ -3,17 +3,45 @@
   <head>
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
-    <title>My AWESOME Boilerplate</title>
+    <title>Morning Mad Libs</title>
   </head>
   <body>
     <div class="container">
-      <h1>Hello, World!</h1>
       <!-- start form -->
-      <form id="my-form" role="form">
-        <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
-        <br>
-      </form>
-      <button id="btn-click" type="submit" class="btn btn-primary btn-md">My BIG Button</button>
+      <div id="questions">
+        <h1>Please fill out the following!</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group">
+            <label for="person">Boy's Name</label>
+            <input for="person" class="form-control person" type="text" placeholder="Enter a boy's name ..">
+          </div>
+          <div class="form-group">
+            <label for="adjective">Adjective</label>
+            <input for="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+          </div>
+          <div class="form-group">
+            <label for="noun">Plural noun</label>
+            <input id="noun" class="form-control noun" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="form-group">
+            <label for="insect">An insect, plural</label>
+            <input id="insect" class="form-control insect" type="text" placeholder="Enter an insect, plural ..">
+          </div>
+          <div class="form-group">
+            <label for="noun2">Plural noun</label>
+            <input id="noun2" class="form-control plural-noun" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="form-group">
+            <label for="verb">A verb ending in "s"</label>
+            <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ending in "s" ..">
+          </div>
+          <div>
+          </div>
+        </form>
+        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+        <hr>
+      </div>
       <!-- end form -->
       <br>
       <br>

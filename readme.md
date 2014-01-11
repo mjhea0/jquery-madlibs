@@ -113,7 +113,7 @@ Updated file:
 
 ### What's going on?
 
-So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with Bootstrap to provide some basic styles. 
+So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with [Bootstrap](http://getbootstrap.com/) to provide some basic styles. 
 
 Let's add some custom styles within our local CSS file, "main.css":
 
@@ -255,26 +255,64 @@ I'm sure you can guess what this method does. If not, test it out. Test it out, 
 
 ***That's it for the basics. Next, let's move on to adding the Madlibs functionality.**
 
-## Step 5: Update the Form
+## Step 5: Update the Form and Add the Story
 
-## Mad libs format
-
-Update both "index.html" and "main.css" to mimick the mad libs format.
+First, expand the form:
 
 ### index.html
+
+```html
+<!-- start form -->
+<div id="questions">
+  <h1>Please fill out the following!</h1>
+  <hr>
+  <form role="form">
+    <div class="form-group">
+      <label for="person">Boy's Name</label>
+      <input for="person" class="form-control person" type="text" placeholder="Enter a boy's name ..">
+    </div>
+    <div class="form-group">
+      <label for="adjective">Adjective</label>
+      <input for="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+    </div>
+    <div class="form-group">
+      <label for="noun">Plural noun</label>
+      <input id="noun" class="form-control noun" type="text" placeholder="Enter a plural noun ..">
+    </div>
+    <div class="form-group">
+      <label for="insect">An insect, plural</label>
+      <input id="insect" class="form-control insect" type="text" placeholder="Enter an insect, plural ..">
+    </div>
+    <div class="form-group">
+      <label for="noun2">Plural noun</label>
+      <input id="noun2" class="form-control plural-noun" type="text" placeholder="Enter a plural noun ..">
+    </div>
+    <div class="form-group">
+      <label for="verb">A verb ending in "s"</label>
+      <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ending in "s" ..">
+    </div>
+    <div>
+    </div>
+  </form>
+  <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+  <hr>
+</div>
+<!-- end form -->
+```
+
+Updated file:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- stylesheets -->
-    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Morning Mad Libs</title>
   </head>
   <body>
     <div class="container">
-
+      <!-- start form -->
       <div id="questions">
         <h1>Please fill out the following!</h1>
         <hr>
@@ -304,20 +342,17 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
             <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ending in "s" ..">
           </div>
           <div>
-            <button type="submit" class="btn btn-primary btn-lg">Generate!</button>
           </div>
         </form>
+        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
         <hr>
       </div>
-
-      <div id="story">
-        <h1>Mad with the Libs</h1>
-        <hr>
-        <h3>I'm in love with <span class="person"></span>. He's so <span class="adjective"></span>! He has big flat <span class="noun"></span>, and when our <span class="insect"></span> meet, I get <span class="noun2"></span> in my stomach. I've fallen for him like a ton of <span class="verb"></span>, and he shuffles for me, too. But I think he's got another girlfriend. What should I do?</h3>
-      </div>
-
+      <!-- end form -->
+      <br>
+      <br>
+      <!-- inputted text after button click -->
+      <p class="results"></p>
     </div>
-    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -325,7 +360,22 @@ Update both "index.html" and "main.css" to mimick the mad libs format.
 </html>
 ```
 
-Here we added a form (with labels and inputs) for inputting the words, as well as the story that the inputed words will be inserted into. The actual words will be inserted between the span tags. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes it consistent.  I also included some [Bootstrap](http://getbootstrap.com/) classes for styling. 
+### What's going on?
+
+Here we added a form - with both labels and inputs - for inputting the words, 
+
+as well as the story that the inputed words will be inserted into. The actual words will be inserted between the span tags. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes it consistent.  I also included some  classes for styling. 
+
+max-width: 500px;
+    <title>Morning Mad Libs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, World!</h1>
+
+
+
+
 
 ### main.css
 
