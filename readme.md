@@ -4,7 +4,7 @@ Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out 
 
 Let's have some fun.
 
-## Step 1: Project Boilerplate
+## Step 1: Create a Project Boilerplate
 
 Start by creating the following files and directories, to define a basic project structure:
 
@@ -16,7 +16,7 @@ Start by creating the following files and directories, to define a basic project
     └── main.js
  ```
 
-### index.html
+#### index.html
 
 ```html
 <!DOCTYPE html>
@@ -37,19 +37,21 @@ Start by creating the following files and directories, to define a basic project
 </html>
 ```
 
-### main.css
+#### main.css
 
 ```css
 /* main.css */
 ```
 
-### main.js
+#### main.js
 
 ```javascript
 $(function() {
   console.log("whee!")
 });
 ```
+
+### What's going on?
 
 This is a good base for us to start with. 
 
@@ -59,13 +61,15 @@ Go back and look at "index.html" in your text editor. You're looking at HTML. Pu
 
 Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
-Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's javascript console - e.g. Firebug or Developer Tools (Chrome / Safari).
+Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
 
-## Step 2: Form
+Oh - and JavaScript is used to make webpages interactive. JavaScript works in conjunction with HTML and CSS.
+
+## Step 2: Add a Form
 
 For Madlibs we need to display a form for the user to enter words. Let's start with a simplified version. 
 
-### index.html
+#### index.html
 
 Add the following code to your "index.html" file right after `<h1>Hello, World!</h1>`:
 
@@ -96,8 +100,8 @@ Updated file:
       <form id="my-form" role="form">
         <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
         <br>
-        <button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
       </form>
+      <button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
       <!-- end form -->
     </div>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -107,11 +111,13 @@ Updated file:
 </html>
 ```
 
+### What's going on?
+
 So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with Bootstrap to provide some basic styles. 
 
 Let's add some custom styles within our local CSS file, "main.css":
 
-### main.css
+#### main.css
 
 ```css
 /* main.css */
@@ -122,12 +128,60 @@ Let's add some custom styles within our local CSS file, "main.css":
 }
 ```
 
-This added the a padding to the top of the page and also set a maximum width to the `.container` class. Find that class in our HTML file. Try tweaking the pixel values to alter the look of the page. 
+### What's going on?
+
+This added the padding to the top of the page and also set a maximum width to the `.container` class. Find that class in our HTML file. Try tweaking the pixel values to alter the look of the page. 
 
 Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. Well, actually, the page just refreshed. We need to somehow grab that inputted word and do *something* with it.
 
-## Step 3: Enter jQuery
+## Step 3: Handle the Event
 
+The process of grabbing the inputted word from the form when a user clicks the button is an commonly referred to as an event handler. The event is the actual button click. We will use jQuery to "handle" that event. 
+
+> Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. These libraries simplify many of the features in JavaScript such as HTML document (DOM) traversing, event handling, and AJAX using fewer lines of code. Again, utilize Google to find a good tutorial on JavaScript, jQuery, and their differences.
+
+### main.js
+
+Update "main.js"
+
+```javascript
+$(function() {
+  
+  console.log("whee!")
+
+  // event handler
+  $("#btn-click").click(function(e) {
+    var input = $("input").val()
+    console.log(input)
+  });
+
+});
+```
+
+Add an id (`id="btn-click"`) to "index.html":
+
+Before:
+
+```html
+<button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
+```
+
+After:
+
+```html
+<button type="submit" id="btn-click" class="btn btn-primary btn-md">My BIG Button</button>
+```
+
+### What's going on?
+
+1. `$("#btn-click").click(function(e) {` is the event. This iniates the process, running the code in the remainder of the function. In other words, the remaining JavaScript/jQuery does not run until there is a button click.
+2. `var input = $("input").val()` sets a variable called "input", while `.val()` fetches the value from the form input.
+3. `id="btn-click"` is used to tie the HTML to the JavaScript. This id is reference in the initial event within the JavaScipt file - `"#btn-click"`.
+4. `console.log(input)` displays the word to the end user via the JavaScript console.
+
+Open "index.html" in your browser. Make sure you have your JavaScript console open. Enter a word in the input box and click the button. This should display the word in the console:
+
+![console](https://raw.github.com/mjhea0/jquery-madlibs/master/console.png)
 
 
 ## Mad libs format
@@ -282,6 +336,7 @@ Too easy? Need some challenges?
 2. Add unit and functional tests. Coverage too.
 3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? Mongo?
 4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
+5. ENTER button - add another event or submit button and move into the form and prevent default
 
 ## Too hard?
 
