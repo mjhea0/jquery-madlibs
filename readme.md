@@ -65,8 +65,21 @@ Also, to ensure that JavaScript is working, open your console. You should see th
 
 For Madlibs we need to display a form for the user to enter words. Let's start with a simplified version. 
 
-
 ### index.html
+
+Add the following code to your "index.html" file right after `<h1>Hello, World!</h1>`:
+
+```html
+<!-- start form -->
+<form id="my-form" role="form">
+  <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
+  <br>
+  <button type="submit" class="btn btn-primary btn-lg">My BIG Button</button>
+</form>
+<!-- end form -->
+```
+
+Updated file:
 
 ```html
 <!DOCTYPE html>
@@ -94,23 +107,28 @@ For Madlibs we need to display a form for the user to enter words. Let's start w
 </html>
 ```
 
+So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with Bootstrap to provide some basic styles. 
+
+Let's add some custom styles within our local CSS file, "main.css":
+
 ### main.css
 
 ```css
 /* main.css */
+
 .container {
   padding-top: 50px;
   max-width: 300px;
 }
 ```
 
-### main.js
+This added the a padding to the top of the page and also set a maximum width to the `.container` class. Find that class in our HTML file. Try tweaking the pixel values to alter the look of the page. 
 
-```javascript
-$(function() {
-  console.log("whee!")
-});
-```
+Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. Well, actually, the page just refreshed. We need to somehow grab that inputted word and do *something* with it.
+
+## Step 3: Enter jQuery
+
+
 
 ## Mad libs format
 
