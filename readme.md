@@ -8,7 +8,7 @@ Let's have some fun.
 
 Start by creating the following files and directories, to define a basic project structure:
 
-```sh
+```shell
 ├── css
 │   └── main.css
 ├── index.html
@@ -22,63 +22,14 @@ Start by creating the following files and directories, to define a basic project
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>My AWESOME Boilerplate</title>
   </head>
   <body>
     <div class="container">
       <h1>Hello, World!</h1>
     </div>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-  </body>
-</html>
-```
-
-### main.css
-
-```css
-/* main.css */
-```
-
-### main.js
-
-```javascript
-$(function() {
-  console.log("whee!")
-});
-```
-
-![boilerplate-img]()
-
-Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
-
-This is a good base for us to start with. 
-
-Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's javascript console - e.g. Firebug or Developer Tools (Chrome / Safari).If JavaScript was not properly working then you'd see this error in the console: ""
-
-
-### index.html
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- stylesheets -->
-    <link href="http://bootswatch.com/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
-    <title>My AWESOME Boilerplate</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Hello, World!</h1>
-        <p class="lead">My AWESOME Boilerplate</p>
-        <button type="button" class="btn btn-primary btn-lg">My BIG Button</button>
-      </div>
-    </div>
-    <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -90,10 +41,6 @@ Also, to ensure that JavaScript is working, open your console. You should see th
 
 ```css
 /* main.css */
-
-.container {
-  padding-top: 50px;
-}
 ```
 
 ### main.js
@@ -104,13 +51,66 @@ $(function() {
 });
 ```
 
-Open the "index.html" file in your web browser. You should see this:
+This is a good base for us to start with. 
 
-![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
+Open the "index.html" file in your web browser. You should see "Hello, World".
 
 Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
-This is a good base for us to start with. Also, to ensure that JavaScript is working, open your console. You should see the text "whee!".
+Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
+
+Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's javascript console - e.g. Firebug or Developer Tools (Chrome / Safari).
+
+## Step 2: Form
+
+For Madlibs we need to display a form for the user to enter words. Let's start with a simplified version. 
+
+
+### index.html
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <title>My AWESOME Boilerplate</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, World!</h1>
+      <!-- start form -->
+      <form id="my-form" role="form">
+        <input id="my-input" class="form-control" type="text" placeholder="Enter something ..">
+        <br>
+        <button type="submit" class="btn btn-primary btn-md">My BIG Button</button>
+      </form>
+      <!-- end form -->
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+```
+
+### main.css
+
+```css
+/* main.css */
+.container {
+  padding-top: 50px;
+  max-width: 300px;
+}
+```
+
+### main.js
+
+```javascript
+$(function() {
+  console.log("whee!")
+});
+```
 
 ## Mad libs format
 
