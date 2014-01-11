@@ -1,6 +1,6 @@
 # Mad Libs featuring Bootstrap and jQuery
 
-Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speach - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing much laughter.
+Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speech - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing much laughter.
 
 Let's have some fun.
 
@@ -57,11 +57,11 @@ This is a good base for us to start with.
 
 Open the "index.html" file in your web browser. You should see "Hello, World".
 
-Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
+Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the language used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
 Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
-Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debudding tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
+Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debugging tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
 
 Oh - and JavaScript is used to make webpages interactive. JavaScript works in conjunction with HTML and CSS.
 
@@ -174,9 +174,9 @@ After:
 
 ### What's going on?
 
-1. `$("#btn-click").click(function(e) {` is the event. This iniates the process, running the code in the remainder of the function. In other words, the remaining JavaScript/jQuery does not run until there is a button click.
+1. `$("#btn-click").click(function(e) {` is the event. This initiates the process, running the code in the remainder of the function. In other words, the remaining JavaScript/jQuery does not run until there is a button click.
 2. `var input = $("input").val()` sets a variable called "input", while `.val()` fetches the value from the form input.
-3. `id="btn-click"` is used to tie the HTML to the JavaScript. This id is reference in the initial event within the JavaScipt file - `"#btn-click"`.
+3. `id="btn-click"` is used to tie the HTML to the JavaScript. This id is reference in the initial event within the JavaScript file - `"#btn-click"`.
 4. `console.log(input)` displays the word to the end user via the JavaScript console.
 
 Open "index.html" in your browser. Make sure you have your JavaScript console open. Enter a word in the input box and click the button. This should display the word in the console:
@@ -237,7 +237,7 @@ Test this out in your browser. You should see this:
 
 #### main.js
 
-Before moving on, we need to make one last update to "main.js". Did you notice how each of the words were placed in the DOM next to one another. That looks a bit sloppy. We could add a list to organize it. But let's just display only the last submmit word.
+Before moving on, we need to make one last update to "main.js". Did you notice how each of the words were placed in the DOM next to one another. That looks a bit sloppy. We could add a list to organize it. But let's just display only the last submitted word.
 
 Before:
 
@@ -436,7 +436,7 @@ Just like in the previous code -
 2. `.empty()` removes any text from that specific class in the story.
 3. `.append()` then adds the new value to the story.
 
-This time I did not assign the values to variables; instead I used the inputted values as parametes for the `.append()` method.
+This time I did not assign the values to variables; instead I used the inputted values as parameters for the `.append()` method.
 
 Test this out. Did it work? Were the values added to the story? If all went well, they should have been.
 
@@ -446,7 +446,7 @@ Now, before we move on, let's add some more functionality:
 
 1. First, we do not want the story to be initially displayed - `$("#story").hide();`
 2. Next, we want to show the story after the button click - $("#story").show(); - and empty the form's input boxes - `$(':input').val('');`.
-3. Finally, let's go ahead and hit all the questions after the form is submited so the user can just focus on the story - `$("#questions").hide();`.
+3. Finally, let's go ahead and hit all the questions after the form is submitted so the user can just focus on the story - `$("#questions").hide();`.
 
 Update main.js with those additional methods:
 
@@ -495,7 +495,7 @@ Okay. Everything looks good. But what happens if the user wants to play again? S
 
 ```javascript
 $("#play-btn").click(function(e) {
-  $("#questions").show(); 	
+  $("#questions").show();   
   $("#story").hide();
 });
 ```
@@ -524,13 +524,13 @@ Too easy? Need some challenges?
 1. As with all projects/problems, there are several ways of solving them. Implement a new means.
 2. Add unit and functional tests. Coverage too. What could you test? The question section is hidden after the button click. The event handler on the button click doesn't fire unless all input boxes contain text.
 3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? MongoDB?
-4. Make it easy for two people to play one game together. One persn would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
+4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
 5. ENTER button. How could you make it so the user could either click the button or press ENTER? (Add another even for the button click or move the submit button into the form tags and add a `.preventDefault()` method to the JS file).
 
 What else?
 
 ## Too hard? Start with the basics. 
 
-Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Madlibs game on your own, without looking at the remaning steps. 
+Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Madlibs game on your own, without looking at the remaining steps. 
 
 Have fun. Cheers!
