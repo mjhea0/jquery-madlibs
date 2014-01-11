@@ -515,17 +515,19 @@ Test time.
 
 ## All done?
 
-Test the program out again. If all works well, run along and play with your bestest of friends.
+Test the program out again. If all works out well, run along and play with your bestest of friends.
 
 ## Challenges
 
 Too easy? Need some challenges?
 
-1. As with all projects, there are several ways of creation. Implement a new means.
-2. Add unit and functional tests. Coverage too.
-3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? Mongo?
-4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
-5. ENTER button - add another event or submit button and move into the form and prevent default
+1. As with all projects/problems, there are several ways of solving them. Implement a new means.
+2. Add unit and functional tests. Coverage too. What could you test? The question section is hidden after the button click. The event handler on the button click doesn't fire unless all input boxes contain text.
+3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? MongoDB?
+4. Make it easy for two people to play one game together. One persn would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
+5. ENTER button. How could you make it so the user could either click the button or press ENTER? (Add another even for the button click or move the submit button into the form tags and add a `.preventDefault()` method to the JS file).
+
+What else?
 
 ## Too hard? Start with the basics. 
 
