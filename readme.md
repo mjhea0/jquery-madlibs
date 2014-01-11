@@ -235,7 +235,25 @@ Test this out in your browser. You should see this:
 
 ![dom](https://raw.github.com/mjhea0/jquery-madlibs/master/dom.png)
 
+#### main.js
 
+Before moving on, we need to make one last update to "main.js". Did you notice how each of the words were placed in the DOM next to one another. That looks a bit sloppy. We could add a list to organize it. But let's just display only the last submmit word.
+
+Before:
+
+```javascript
+$(".results").append(input);
+```
+
+After:
+
+```javascript
+$(".results").empty.append(input);
+```
+
+I'm sure you can guess what this method does. If not, test it out. Test it out, regardless. :)
+
+## Step 5:
 
 ## Mad libs format
 
