@@ -424,7 +424,17 @@ $(function() {
 
 });
 ```
+### What's going on?
 
+Just like in the previous code -
+
+1. `.val()` grabs the value from the form inputs.
+2. `.empty()` removes any text from that specific class in the story.
+3. `.append()` then adds the new value to the story.
+
+This time I did not assign the values to variables; instead I used the inputted values as parametes for the `.append()` method.
+
+Test this out. Did it work? Were the values added to the story? If all went well, they should have been.
 
 
 
@@ -435,11 +445,7 @@ $(function() {
 
 **What's going on here?**
 
-1. `$("form").submit()` initiates the process. In other words, the remaining jQuery doesn't run until you submit the form.
-2. `e.preventDefault()` disables the browser's default behavior. Try leaving this out. What happens? 
-3. `.val()` fetches the value from the form inputs.
-4. `.empty()` removes any text from that specific class in the story.
-5. `.append()` then adds the new value to the story.
+
 6. `.show()` unhides the story.
 7. `.hide()` hides the questions.
 
