@@ -481,39 +481,37 @@ $(function() {
 });
 ```
 
-
-
-### main.css
-
-```css
-
-#story {
-  display: none;
-}
-```
-
-`display:none` hides the story from view. You'll see in a second why we do this.
-
-![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
-
-## Test
-
-Let's test out the functionality. Enter values into the form and press submit. You should see the following if all went well.
+Let's test out the functionality again. Enter values into the form and press Generate. You should see the following if all went well:
 
 ![story](https://raw.github.com/mjhea0/jquery-madlibs/master/story.png)
 
-## Play again
+> Please note: Instead of using jQuery, `$("#story").hide();` to hide the story, you could also use CSS - `#story {display: none;}`
 
-Next, add the ability to play the game again by adding the following code to "main.js":
+Step 7: Handle Another Event
+
+Okay. Everything looks good. But what happens if the user wants to play again? Sure s/he could refresh the page, but let's make it easier by adding another event handler.
+
+#### main.js
 
 ```javascript
 $("#play-btn").click(function(e) {
-  e.preventDefault()
   $("#questions").show(); 	
   $("#story").hide();
 });
 ```
-Can you tell what's happening here? Look at previous jQuery code that we added before. 
+Can you tell what's happening here? Look at previous jQuery code that we added before if you need an explanation.
+
+#### index.html
+
+Finally, add in a button with the an id of `play-btn` right after the story:
+
+```html
+<div>
+  <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Play Again?</button>
+</div>
+```
+
+Test time.    
 
 **All done?**
 

@@ -25,4 +25,10 @@ $(function() {
 
   });
 
+  // ---- event handler ---- //
+  $("#play-btn").click(function(e) {
+    $("#questions").show();   
+    $("#story").hide();
+  });
+
 });
