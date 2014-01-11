@@ -63,7 +63,7 @@ $(function() {
 
 Open the "index.html" file in your web browser. You should see this:
 
-![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/master/boilerplate.png)
+![boilerplate](https://raw.github.com/mjhea0/jquery-madlibs/images/master/boilerplate.png)
 
 Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the langage used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
@@ -156,7 +156,7 @@ Here we added a form (with labels and inputs) for inputting the words, as well a
 
 `display:none` hides the story from view. You'll see in a second why we do this.
 
-![form](https://raw.github.com/mjhea0/jquery-madlibs/master/form.png)
+![form](https://raw.github.com/mjhea0/jquery-madlibs/images/master/form.png)
 
 ## Add jQuery
 
@@ -194,7 +194,7 @@ $(function() {
 
 Let's test out the functionality. Enter values into the form and press submit. You should see the following if all went well.
 
-![story](https://raw.github.com/mjhea0/jquery-madlibs/master/story.png)
+![story](https://raw.github.com/mjhea0/jquery-madlibs/images/master/story.png)
 
 ## Play again
 

@@ -2,6 +2,7 @@ $(function() {
 
   // hide the story from view
   $("#story").hide();
+  
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
