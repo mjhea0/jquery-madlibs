@@ -8,7 +8,7 @@ Let's have some fun.
 
 Start by creating the following files and directories, to define a basic project structure:
 
-> **What program are you using to make these files in?** I will be using [Sublime Text](http://www.sublimetext.com/) for this tutorial, which is an advanced text editor for Windows, Mac, and Linux. If you are looking for something simplier, check out [gedit](https://wiki.gnome.org/Apps/Gedit) - which is also cross-platform. Both of these editors have sytnax highlightinging. Put simply, syntax highlighting helps distinguish between different parts of a languages syntax (rules), by highlighting common parts the same color. This makes code easier to read and debug.
+> **What program are you using to make these files in?** I will be using [Sublime Text](http://www.sublimetext.com/) for this tutorial, which is an advanced text editor for Windows, Mac, and Linux. If you are looking for something simpler, check out [gedit](https://wiki.gnome.org/Apps/Gedit) - which is also cross-platform. Both of these editors have syntax highlighting. Put simply, syntax highlighting helps distinguish between different parts of a languages syntax (rules), by highlighting common parts the same color. This makes code easier to read and debug.
 
 ```shell
 ├── css
@@ -61,7 +61,7 @@ Open the "index.html" file in your web browser. You should see "Hello, World".
 
 Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the language used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
-So, while we're on the topic of HTML, there are a number of different parts and rules. If I attempted to explain them all, this tutotial would last for days. Fortunately, for this tutorial, you really only need to understand tags, elements, and selectors.
+So, while we're on the topic of HTML, there are a number of different parts and rules. If I attempted to explain them all, this tutorial would last for days. Fortunately, for this tutorial, you really only need to understand tags, elements, and selectors.
 
 ```html
 <div class="container">
@@ -71,7 +71,7 @@ So, while we're on the topic of HTML, there are a number of different parts and 
 
 1. Tags form the structure of your page. There usually is an opening tag and then a closing tag, like - `<div></div>`.
 2. Elements represent the tags as well as *whatever* falls within the tags, like - `<h1>Hello, World!</h1>`
-3. Selectors are used to select the tag for some purpose. You could use them for defining styles vis CSS or as JavaScript or jQuery hooks - that is, for referencing certain JavaScript code back to the HTML.
+3. Selectors are used to select the tag for some purpose. You could use them for defining styles vis CSS or as JavaScript or jQuery hooks - that is, for referencing certain JavaScript code back to the HTML. Put another way, with regard to Javascript, selectors are used to access either tags or elements.
 
 > Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
@@ -158,7 +158,7 @@ Test out the page in you browser. Insert a word into the input box and click the
 
 The process of grabbing the inputted word from the form when a user clicks the button is commonly referred to as an event handler. In this case, the event is the actual button click. We will use jQuery to "handle" that event. 
 
-Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. 
+Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. But it is possible to perform all the same functionality jQuery provides in vanilla Javascript; it just takes a lot more code.
 
 > These libraries simplify many of the features in JavaScript such as HTML document (DOM) traversing, event handling, and AJAX using fewer lines of code. Again, utilize Google to find a good tutorial on JavaScript, jQuery, and their differences.
 
@@ -200,6 +200,8 @@ After:
 2. `var input = $("input").val()` sets a variable called "input", while `.val()` fetches the value from the form input.
 3. `id="btn-click"` is used to tie the HTML to the JavaScript. This id is reference in the initial event within the JavaScript file - `"#btn-click"`.
 4. `console.log(input)` displays the word to the end user via the JavaScript console.
+
+> The `$()` in `$("#btn-click").click()` is a jQuery constructor. Basically, it's used to tell the browser that the code within the parenthesis is jQuery.
 
 Open "index.html" in your browser. Make sure you have your JavaScript console open. Enter a word in the input box and click the button. This should display the word in the console:
 
