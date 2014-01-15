@@ -71,7 +71,7 @@ So, while we're on the topic of HTML, there are a number of different parts and 
 
 1. Tags form the structure of your page. There usually is an opening tag and then a closing tag, like - `<div></div>`.
 2. Elements represent the tags as well as *whatever* falls within the tags, like - `<h1>Hello, World!</h1>`
-3. Selectors are used to select the tag for some purpose. You could use them for defining styles vis CSS or as JavaScript or jQuery hooks - that is, for referencing certain JavaScript code back to the HTML. Put another way, with regard to Javascript, selectors are used to access either tags or elements.
+3. Selectors are used to select the tag for some purpose. You could use them for defining styles vis CSS or as JavaScript or jQuery hooks - that is, for referencing certain JavaScript code back to the HTML. *Put another way, with regard to Javascript, selectors are used to access either tags or elements.*
 
 > Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
