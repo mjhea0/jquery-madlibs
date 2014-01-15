@@ -2,6 +2,13 @@
 
 Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speech - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing much laughter.
 
+html has different meanings. i can't explain everything - but for example ID, CLASS
+JQUERY IS JAVASCRIPT
+syntax different piece of code do different things. every language has different rules. 
+step 4 - iteratively
+step 5 - ids
+review step 6 and step 7
+
 Let's have some fun.
 
 ## Step 1: Create a Project Boilerplate
@@ -136,7 +143,7 @@ This added the padding to the top of the page and also set a maximum width to th
 
 > Find that class in the HTML file. Try tweaking the pixel values to alter the look of the page. 
 
-Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. Well, actually, the page just refreshed. We need to somehow grab that inputted word and do *something* with it.
+Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. We need to somehow grab that inputted word and do *something* with it.
 
 ## Step 3: Handle the Event
 
@@ -493,7 +500,7 @@ Let's test out the functionality again. Enter values into the form and press Gen
 
 > Please note: Instead of using jQuery, `$("#story").hide();` to hide the story, you could also use CSS - `#story {display: none;}`
 
-Step 7: Handle Another Event
+## Step 7: Handle Another Event
 
 Okay. Everything looks good. But what happens if the user wants to play again? Sure s/he could refresh the page, but let's make it easier by adding another event handler.
 
