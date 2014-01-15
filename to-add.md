@@ -1,9 +1,9 @@
-
-
-
-
-
 -not finished with content at time...now what?
+
+
+* chat, hide - screenshare, github
+
+
 
 
 html has different meanings. i can't explain everything - but for example ID, CLASS
