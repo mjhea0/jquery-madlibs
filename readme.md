@@ -140,9 +140,11 @@ Test out the page in you browser. Insert a word into the input box and click the
 
 ## Step 3: Handle the Event
 
-The process of grabbing the inputted word from the form when a user clicks the button is an commonly referred to as an event handler. The event is the actual button click. We will use jQuery to "handle" that event. 
+The process of grabbing the inputted word from the form when a user clicks the button is commonly referred to as an event handler. In this case, the event is the actual button click. We will use jQuery to "handle" that event. 
 
-> Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. These libraries simplify many of the features in JavaScript such as HTML document (DOM) traversing, event handling, and AJAX using fewer lines of code. Again, utilize Google to find a good tutorial on JavaScript, jQuery, and their differences.
+Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. 
+
+> These libraries simplify many of the features in JavaScript such as HTML document (DOM) traversing, event handling, and AJAX using fewer lines of code. Again, utilize Google to find a good tutorial on JavaScript, jQuery, and their differences.
 
 ### main.js
 
@@ -162,7 +164,7 @@ $(function() {
 });
 ```
 
-Add an id (`id="btn-click"`) to "index.html":
+Add an id (`id="btn-click"`) to "index.html" within the `<button>` tags:
 
 Before:
 
@@ -178,7 +180,7 @@ After:
 
 ### What's going on?
 
-1. `$("#btn-click").click(function(e) {` is the event. This initiates the process, running the code in the remainder of the function. In other words, the remaining JavaScript/jQuery does not run until there is a button click.
+1. `$("#btn-click").click(function(e) {` is the event. This initiates the process, running the code in the remainder of the function. In other words, the remaining JavaScript/jQuery will not run until there is a button click.
 2. `var input = $("input").val()` sets a variable called "input", while `.val()` fetches the value from the form input.
 3. `id="btn-click"` is used to tie the HTML to the JavaScript. This id is reference in the initial event within the JavaScript file - `"#btn-click"`.
 4. `console.log(input)` displays the word to the end user via the JavaScript console.
@@ -257,7 +259,7 @@ $(".results").empty().append(input);
 
 I'm sure you can guess what this method does. If not, test it out. Test it out, regardless. :)
 
-***That's it for the basics. Next, let's move on to adding the Madlibs functionality.**
+***That's it for the basics. Next, let's move on to adding the Madlibs functionality.***
 
 ## Step 5: Update the Form and Add the Story
 
