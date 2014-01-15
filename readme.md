@@ -61,6 +61,18 @@ Open the "index.html" file in your web browser. You should see "Hello, World".
 
 Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the language used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
+So, while we're on the topic of HTML, there are a number of different parts and rules. If I attempted to explain them all, this tutotial would last for days. Fortunately, for this tutorial, you really only need to understand tags, elements, and selectors.
+
+```html
+<div class="container">
+  <h1>Hello, World!</h1>
+</div>
+```
+
+1. Tags form the structure of your page. There usually is an opening tag and then a closing tag, like - `<div></div>`.
+2. Elements represent the tags as well as *whatever* falls within the tags, like - `<h1>Hello, World!</h1>`
+3. Selectors are used to select the tag for some purpose. You could use them for defining styles vis CSS or as JavaScript or jQuery hooks - that is, for referencing certain JavaScript code back to the HTML.
+
 > Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
 In the JS file there is a `console.log`. This is a debugging tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug (Firefox) or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
