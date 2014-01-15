@@ -132,7 +132,9 @@ Let's add some custom styles within our local CSS file, "main.css":
 
 ### What's going on?
 
-This added the padding to the top of the page and also set a maximum width to the `.container` class. Find that class in our HTML file. Try tweaking the pixel values to alter the look of the page. 
+This added the padding to the top of the page and also set a maximum width to the `.container` class. 
+
+> Find that class in the HTML file. Try tweaking the pixel values to alter the look of the page. 
 
 Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. Well, actually, the page just refreshed. We need to somehow grab that inputted word and do *something* with it.
 
