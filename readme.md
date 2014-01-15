@@ -59,11 +59,13 @@ Open the "index.html" file in your web browser. You should see "Hello, World".
 
 Go back and look at "index.html" in your text editor. You're looking at HTML. Put simply, HTML is the language used for creating websites, displayable in a web browser. Now open the "main.css" file. While HTML provides the structure, CSS makes webpages look pretty. Together, they are the fundamental building blocks for web pages.
 
-Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
+> Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
-Also, to ensure that JavaScript is working, open your console. You should see the text "whee!". `console.log` is a debugging tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
+In the JS file there is a `console.log`. This is a debugging tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug (Firefox) or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
 
-Oh - and JavaScript is used to make webpages interactive. JavaScript works in conjunction with HTML and CSS.
+Open your console. You should see the text "whee!". 
+
+Oh - and JavaScript is used in conjunction with HTML and CSS to make webpages interactive.
 
 ## Step 2: Add a Form
 
