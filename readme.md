@@ -2,13 +2,6 @@
 
 Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speech - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing much laughter.
 
-html has different meanings. i can't explain everything - but for example ID, CLASS
-JQUERY IS JAVASCRIPT
-syntax different piece of code do different things. every language has different rules. 
-step 4 - iteratively
-step 5 - ids
-review step 6 and step 7
-
 Let's have some fun.
 
 ## Step 1: Create a Project Boilerplate
