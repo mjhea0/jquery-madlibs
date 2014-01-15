@@ -8,6 +8,8 @@ Let's have some fun.
 
 Start by creating the following files and directories, to define a basic project structure:
 
+> **What program are you using to make these files in?** I will be using [Sublime Text](http://www.sublimetext.com/) for this tutorial, which is an advanced text editor for Windows, Mac, and Linux. If you are looking for something simplier, check out [gedit](https://wiki.gnome.org/Apps/Gedit) - which is also cross-platform. Both of these editors have sytnax highlightinging. Put simply, syntax highlighting helps distinguish between different parts of a languages syntax (rules), by highlighting common parts the same color. This makes code easier to read and debug.
+
 ```shell
 ├── css
 │   └── main.css
@@ -62,6 +64,8 @@ Go back and look at "index.html" in your text editor. You're looking at HTML. Pu
 > Did you notice that one of my CSS files and two of my scripts are imported from an external URL? These come from a Content Delivery Network (CDN). There are benefits for doing this. See if you can figure them out. Use Google.
 
 In the JS file there is a `console.log`. This is a debugging tool that allows you to post a message to the browser's JavaScript console - e.g. Firebug (Firefox) or Developer Tools (Chrome / Safari). If you've never used this before, Google "accessing the js console in Chrome" to learn how to pull up the JavaScript console.
+
+> **What about Internet Explorer? Can I use the debugger in that?** Honestly, I do not know. But the majority of web developers do not use Internet Explorer, because it is simply not developer friendly - it does not have the developer tools that Chrome or Firefox has.
 
 Open your console. You should see the text "whee!". 
 
