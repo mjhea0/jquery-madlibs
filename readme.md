@@ -1,4 +1,4 @@
-# Mad Libs featuring Bootstrap and jQuery
+# Mad Libs with jQuery
 
 Did you ever play Mad Libs as a kid? If not, the rules are simple: You fill out a random list of words based on a part of speech - e.g, nouns, verbs, adjectives, and adverbs - without knowing the underlying context. These words are then inserted into a story. When read, the results are generally humorous, causing much laughter.
 
@@ -277,7 +277,7 @@ $(".results").empty().append(input);
 
 I'm sure you can guess what this method does. If not, test it out. Test it out, regardless. :)
 
-***That's it for the basics. Next, let's move on to adding the Madlibs functionality.***
+***That's it for the basics. Next, let's move on to adding the Mad Libs functionality.***
 
 ## Step 5: Update the Form and Add the Story
 
@@ -552,6 +552,7 @@ Too easy? Need some challenges?
 3. Allow users to add their own stories. Think about what type of medium you could use to store the data. JSON, perhaps? Then where would you store the JSON file? LocalStorage? MongoDB?
 4. Make it easy for two people to play one game together. One person would enter his/her answers, which would be stored. The inputs would clear. Then the next person would do the same. Finally, both stories would appear. Double the amount of laughs.
 5. ENTER button. How could you make it so the user could either click the button or press ENTER? (Add another even for the button click or move the submit button into the form tags and add a `.preventDefault()` method to the JS file).
+6. Could `.toggle()` be used somehow instead of two different betweens? Maybe you could toggle the question to hide and the story to show, then vice-versa, with the same button?
 
 What else?
 
