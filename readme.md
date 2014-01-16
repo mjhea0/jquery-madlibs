@@ -535,6 +535,8 @@ Finally, add in a button with the an id of `play-btn` right before the closing d
 </div>
 ```
 
+![story2](https://raw.github.com/mjhea0/jquery-madlibs/master/images/story2.png)
+
 Test time.    
 
 ## All done?
