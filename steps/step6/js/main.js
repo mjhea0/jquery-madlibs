@@ -5,7 +5,7 @@ $(function() {
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
-
+    e.preventDefault()
     // grab the values from the input boxes, then append them to the DOM
     $(".person").empty().append($("input.person").val());
     $(".adjective").empty().append($("input.adjective").val());

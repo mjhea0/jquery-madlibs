@@ -55,7 +55,7 @@ $(function() {
 
 ### What's going on?
 
-This is a good base for us to start with. 
+This is a good base for us to start with.
 
 Open the "index.html" file in your web browser. You should see "Hello, World".
 
@@ -79,13 +79,13 @@ In the JS file there is a `console.log`. This is a debugging tool that allows yo
 
 > **What about Internet Explorer? Can I use the debugger in that?** Honestly, I do not know. But the majority of web developers do not use Internet Explorer, because it is simply not developer friendly - it does not have the developer tools that Chrome or Firefox has.
 
-Open your console. You should see the text "whee!". 
+Open your console. You should see the text "whee!".
 
 Oh - and JavaScript is used in conjunction with HTML and CSS to make webpages interactive.
 
 ## Step 2: Add a Form
 
-For Mad Libs we need to display a form for the user to enter words. Let's start with a simplified version. 
+For Mad Libs we need to display a form for the user to enter words. Let's start with a simplified version.
 
 #### index.html
 
@@ -131,7 +131,7 @@ Updated file:
 
 ### What's going on?
 
-So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with [Bootstrap](http://getbootstrap.com/) to provide some basic styles. 
+So, here we just added an input and a submit button. Notice all of the new ids and classes. Many of these are associated with [Bootstrap](http://getbootstrap.com/) to provide some basic styles.
 
 Let's add some custom styles within our local CSS file, "main.css":
 
@@ -148,15 +148,15 @@ Let's add some custom styles within our local CSS file, "main.css":
 
 ### What's going on?
 
-This added the padding to the top of the page and also set a maximum width to the `.container` class. 
+This added the padding to the top of the page and also set a maximum width to the `.container` class.
 
-> Find that class in the HTML file. Try tweaking the pixel values to alter the look of the page. 
+> Find that class in the HTML file. Try tweaking the pixel values to alter the look of the page.
 
 Test out the page in you browser. Insert a word into the input box and click the button. Nothing happens. We need to somehow grab that inputted word and do *something* with it.
 
 ## Step 3: Handle the Event
 
-The process of grabbing the inputted word from the form when a user clicks the button is commonly referred to as an event handler. In this case, the event is the actual button click. We will use jQuery to "handle" that event. 
+The process of grabbing the inputted word from the form when a user clicks the button is commonly referred to as an event handler. In this case, the event is the actual button click. We will use jQuery to "handle" that event.
 
 Please note that jQuery is JavaScript. Well, it's actually a set of libraries developed in JavaScript. But it is possible to perform all the same functionality jQuery provides in vanilla Javascript; it just takes a lot more code.
 
@@ -168,11 +168,12 @@ Update "main.js"
 
 ```javascript
 $(function() {
-  
+
   console.log("whee!")
 
   // event handler
   $("#btn-click").click(function(e) {
+    e.preventDefault()
     var input = $("input").val()
     console.log(input)
   });
@@ -209,9 +210,9 @@ Open "index.html" in your browser. Make sure you have your JavaScript console op
 
 ## Step 4: Append the text to the DOM
 
-Next, instead of using a `console.log` to display the inputted word to the user, let's add it to the Document Object Model (DOM)? Wait. What's the DOM? Quit simply, the DOM is a structural representation of the HTML document. Using JavaScript, you can add, remove, or modify the contents of the DOM, which changes how the page looks to the end user. 
+Next, instead of using a `console.log` to display the inputted word to the user, let's add it to the Document Object Model (DOM)? Wait. What's the DOM? Quite simply, the DOM is a structural representation of the HTML document. Using JavaScript, you can add, remove, or modify the contents of the DOM, which changes how the page looks to the end user.
 
-In this case, we want to add the text to the DOM. 
+In this case, we want to add the text to the DOM.
 
 #### main.js
 
@@ -225,11 +226,12 @@ Updated file:
 
 ```javascript
 $(function() {
-  
+
   console.log("whee!")
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
+    e.preventDefault()
     // grab the value from the input box after the button click
     var input = $("input").val()
     // display value within the browser's JS console
@@ -425,7 +427,7 @@ Updated file:
 ```
 ### What's going on?
 
-Notice the `<span>` tags. The actual words will be inserted between them once the user clicks the button. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes the naming consistent. 
+Notice the `<span>` tags. The actual words will be inserted between them once the user clicks the button. Notice how the classes for each span matches the input id in the form. This is not required, but it just makes the naming consistent.
 
 Check it out in your browser.
 
@@ -441,6 +443,7 @@ $(function() {
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
+    e.preventDefault()
     // grab the values from the input boxes, then append them to the DOM
     $(".person").empty().append($("input.person").val());
     $(".adjective").empty().append($("input.adjective").val());
@@ -482,7 +485,7 @@ $(function() {
 
   // ---- event handler ---- //
   $("#btn-click").click(function(e) {
-
+    e.preventDefault()
     // grab the values from the input boxes, then append them to the DOM
     $(".person").empty().append($("input.person").val());
     $(".adjective").empty().append($("input.adjective").val());
@@ -519,7 +522,7 @@ Okay. Everything looks good. But what happens if the user wants to play again? S
 
 ```javascript
 $("#play-btn").click(function(e) {
-  $("#questions").show();   
+  $("#questions").show();
   $("#story").hide();
 });
 ```
@@ -537,7 +540,7 @@ Finally, add in a button with the an id of `play-btn` right before the closing d
 
 ![story2](https://raw.github.com/mjhea0/jquery-madlibs/master/images/story2.png)
 
-Test time.    
+Test time.
 
 ## All done?
 
@@ -556,8 +559,8 @@ Too easy? Need some challenges?
 
 What else?
 
-## Too hard? Start with the basics. 
+## Too hard? Start with the basics.
 
-Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Mad Libs game on your own, without looking at the remaining steps. 
+Read over the first four steps again make sure to write the actual code. DO NOT copy and paste. Read over it again if you have to for further understanding, then try to implement the Mad Libs game on your own, without looking at the remaining steps.
 
 Have fun. Cheers!
